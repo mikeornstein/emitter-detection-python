@@ -122,7 +122,7 @@ def generate_ex1_data(rng=None):
     num_elements = 25   # Array elements
     num_samples = 100  # Time samples
     d_lam = .5
-    v = array_df.model.make_steering_vector(d_lam, num_elements)
+    v, v_grad = array_df.model.make_steering_vector(d_lam, num_elements)
 
     # Initialize source positions
     num_sources = 3  # Sources

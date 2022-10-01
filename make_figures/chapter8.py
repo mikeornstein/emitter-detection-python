@@ -244,7 +244,7 @@ def make_figure_6(prefix=None):
     plt.plot(u2*np.array([1, 1]), [-20, 0], linestyle='--', color='black')
 
     # Annotate the beamwidth
-    plt.annotate(s='', xy=(u1, -16.5), xytext=(u2, -16.5), arrowprops=dict(arrowstyle='<->', color='k'))
+    plt.annotate(text='', xy=(u1, -16.5), xytext=(u2, -16.5), arrowprops=dict(arrowstyle='<->', color='k'))
     plt.text(-.02, -18, r'$\delta_u$', fontsize=11)
 
     plt.ylabel('Array Factor [linear]')
